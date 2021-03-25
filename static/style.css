@@ -1,0 +1,39 @@
+.container-lg{
+    background:  #f8f9fa;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(83, 83, 83);
+}
+#back{
+    background-color: rgb(223, 223, 223);
+    /*background-image: url(https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);*/
+}
+
+ul.navbar-nav{
+    margin-left: 35%;
+}
+
+#img{
+    height:830px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    width:100%;
+    border-radius: 20px;
+}
+
+#one{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 20px;
+}
+.two{
+    text-align: center;
+}
+#three{
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+#four{
+    padding-bottom: 20px;
+}

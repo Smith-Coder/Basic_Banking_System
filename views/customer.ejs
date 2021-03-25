@@ -1,0 +1,65 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/df24c2fdc0.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="back">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <h2 class="navbar-brand"><i class="fas fa-university"> Banking System</i></h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/"><i class="fas fa-home"> Home</i></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="customers"><i class="fas fa-user-friends"> Customers</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav>
+<br>
+<div class="container-lg" id="four">
+    <h1 id="one">Banking System</h1>
+    <h3 class="two">"Enabling to transfer funds"</h3>
+    <hr>
+    <br>
+    <h2 class="two">Customer Details</h2>
+    <br>
+  <div>
+    <h3 class="two">Account Number: <%=accno%></h3>
+    <br>
+    <h3 class="two">Name: <%=name%></h3>
+    <br>
+    <h3 class="two">Email: <%=email%></h3>
+    <br>
+    <h3 class="two">Bank Balance: <%=balance%></h3>
+    <br>
+    <div class="two">
+    <form name="myForm" method="post" action="transfer">
+        <label for="trans"><h3>Click for fund transfers</h3></label>
+        <br>
+        <button id="trans" type="submit" class="btn btn-secondary" value='<%=accno%>' name="transfer">Transfer</button>
+    </form>
+    <br>
+    <br>
+    <label for="trans"><h3>Click to view all transactions</h3></label>
+    <br>
+    <a type="button" class="btn btn-secondary" href="transactions" id="trans">View Transactions</a>
+    </div>
+    <br>
+    <br>
+    <%if(locals.pas){%>
+            <h3 class="alert alert-danger"><%=pas%></h3>
+        <%}%>
+  </div>
+</div>
+</body>
+</html>
